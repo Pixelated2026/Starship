@@ -9,7 +9,7 @@ struct GalleryWallpaper {
     var isVideo: Bool { ["mp4", "mov", "m4v"].contains(fileExtension) }
     var url: URL? {
         let encodedPath = path.split(separator: "/").map { String($0).addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? String($0) }.joined(separator: "/")
-        return URL(string: "https://raw.githubusercontent.com/r4ph1-2015/Starship/main/\(encodedPath)")
+        return URL(string: "https://raw.githubusercontent.com/Pixelated2026/Starship/main/\(encodedPath)")
     }
 }
 
@@ -26,7 +26,7 @@ final class GalleryCatalog {
     }
 
     private let supported = Set(["jpg", "jpeg", "png", "webp", "gif", "avif", "heic", "heif", "mp4", "mov", "m4v"])
-    private let treeURL = URL(string: "https://api.github.com/repos/r4ph1-2015/Starship/git/trees/main?recursive=1")!
+    private let treeURL = URL(string: "https://api.github.com/repos/Pixelated2026/Starship/git/trees/main?recursive=1")!
 
     func fetch(completion: @escaping (Result<[GalleryWallpaper], Error>) -> Void) {
         var request = URLRequest(url: treeURL)

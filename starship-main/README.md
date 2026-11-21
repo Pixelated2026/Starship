@@ -10,10 +10,9 @@ Native wallpaper app for macOS, built with Swift and AppKit.
 - Start at login using `SMAppService`.
 
 ## Build
-Run on macOS Tahoe with Xcode Command Line Tools installed:
+Build with Xcode Command Line Tools installed. The app targets macOS Ventura (13) and later on Apple Silicon:
 
 ```bash
-cd Starship
 ./Scripts/build.sh
 open build/starship.app
 ```

@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/primary.swiftdeps"
+  },
+  "/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/AppDelegate.swift": {
+    "dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/AppDelegate.d",
+    "object": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/AppDelegate.swiftdeps",
+    "diagnostics": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/AppDelegate.dia"  },
+  "/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/GalleryCatalog.swift": {
+    "dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/GalleryCatalog.d",
+    "object": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/GalleryCatalog.swift.o",
+    "swiftmodule": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/GalleryCatalog~partial.swiftmodule",
+    "swift-dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/GalleryCatalog.swiftdeps",
+    "diagnostics": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/GalleryCatalog.dia"  },
+  "/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/Library.swift": {
+    "dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/Library.d",
+    "object": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/Library.swift.o",
+    "swiftmodule": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/Library~partial.swiftmodule",
+    "swift-dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/Library.swiftdeps",
+    "diagnostics": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/Library.dia"  },
+  "/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/LockScreenManager.swift": {
+    "dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/LockScreenManager.d",
+    "object": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/LockScreenManager.swift.o",
+    "swiftmodule": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/LockScreenManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/LockScreenManager.swiftdeps",
+    "diagnostics": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/LockScreenManager.dia"  },
+  "/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/TemporalEncoder.swift": {
+    "dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/TemporalEncoder.d",
+    "object": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/TemporalEncoder.swift.o",
+    "swiftmodule": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/TemporalEncoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/TemporalEncoder.swiftdeps",
+    "diagnostics": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/TemporalEncoder.dia"  },
+  "/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/WallpaperEngine.swift": {
+    "dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/WallpaperEngine.d",
+    "object": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/WallpaperEngine.swift.o",
+    "swiftmodule": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/WallpaperEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/WallpaperEngine.swiftdeps",
+    "diagnostics": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/WallpaperEngine.dia"  },
+  "/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/main.swift": {
+    "dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/main.d",
+    "object": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/main.swift.o",
+    "swiftmodule": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/main.swiftdeps",
+    "diagnostics": "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/main.dia"  }
+}

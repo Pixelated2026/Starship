@@ -1,0 +1,47 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "Starship-arm64-apple-macosx-debug.module": ["<Starship-arm64-apple-macosx-debug.module>"]
+  "main": ["<Starship-arm64-apple-macosx-debug.module>"]
+  "test": ["<Starship-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/AppDelegate.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/GalleryCatalog.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/Library.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/LockScreenManager.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/TemporalEncoder.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/WallpaperEngine.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/main.swift"]
+    outputs: ["/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/sources"]
+    description: "Write auxiliary file /Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/sources"
+
+  "/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<Starship-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Modules/Starship.swiftmodule"]
+    outputs: ["<Starship-arm64-apple-macosx-debug.module>"]
+
+  "C.Starship-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/AppDelegate.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/GalleryCatalog.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/Library.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/LockScreenManager.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/TemporalEncoder.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/WallpaperEngine.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/main.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/sources"]
+    outputs: ["/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Modules/Starship.swiftmodule"]
+    description: "Compiling Swift Module 'Starship' (7 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","Starship","-emit-dependencies","-emit-module","-emit-module-path","/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Modules/Starship.swiftmodule","-output-file-map","/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/output-file-map.json","-incremental","@/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Starship.build/sources","-I","/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-j6","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/raphaelknitelius/Projects/starship-main/starship-main/.build/index-build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","Starship_main","-swift-version","6","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","starship_main"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/raphaelknitelius/Projects/starship-main/starship-main/Starship/","/Users/raphaelknitelius/Projects/starship-main/starship-main/Package.swift","/Users/raphaelknitelius/Projects/starship-main/starship-main/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

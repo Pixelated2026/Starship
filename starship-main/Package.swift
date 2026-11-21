@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "Starship",
-    platforms: [.macOS(.v26)],
+    platforms: [.macOS(.v13)],
     products: [.executable(name: "Starship", targets: ["Starship"])],
     targets: [.executableTarget(name: "Starship", path: "Starship")]
 )

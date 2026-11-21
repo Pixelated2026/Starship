@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:starship-main}/starship-main",
+            "name": "Debug Starship (starship-main)",
+            "target": "Starship",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug Starship (starship-main)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:starship-main}/starship-main",
+            "name": "Release Starship (starship-main)",
+            "target": "Starship",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release Starship (starship-main)"
+        }
+    ]
+}

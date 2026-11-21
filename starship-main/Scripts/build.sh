@@ -4,14 +4,13 @@ cd "$(dirname "$0")/.."
 ROOT="$PWD"
 BUILD="$ROOT/build"
 APP="$BUILD/starship.app"
-STARSHIP_SDK="${STARSHIP_SDK:-/Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk}"
-if [[ ! -d "$STARSHIP_SDK" ]]; then STARSHIP_SDK="$(xcrun --sdk macosx --show-sdk-path)"; fi
+STARSHIP_SDK="${STARSHIP_SDK:-$(xcrun --sdk macosx --show-sdk-path)}"
 rm -rf "$BUILD/Starship.app" "$APP"
 rm -f "$BUILD/Starship.zip" "$BUILD/starship.dmg"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 
 swiftc -O -parse-as-library \
-  -target arm64-apple-macosx26.0 \
+  -target arm64-apple-macosx13.0 \
   -sdk "$STARSHIP_SDK" \
   "$ROOT/Starship/main.swift" \
   "$ROOT/Starship/AppDelegate.swift" \
@@ -33,7 +32,7 @@ cat > "$APP/Contents/Info.plist" <<'PLIST'
 <key>CFBundlePackageType</key><string>APPL</string>
 <key>CFBundleShortVersionString</key><string>2026.1</string>
 <key>CFBundleVersion</key><string>202601</string>
-<key>LSMinimumSystemVersion</key><string>26.0</string>
+<key>LSMinimumSystemVersion</key><string>13.0</string>
 <key>LSUIElement</key><true/>
 <key>NSHighResolutionCapable</key><true/>
 </dict></plist>
