@@ -1,8 +1,4 @@
-Starship - Free and Open Source Forever
-
-Starship is in the middle of being acquired by an Non Profit Division of a Company.
-More Details on that soon. Website will be down on December 1st Tuesday. The Website will move to a new domain and will be improved.
-Starship will remain free and opensource even after this. The Official Starship Repo will be moved to an Organization. 
+Starship - Free and Open Source Forever - Made by Pixelated2026
 
 Download the dmg file through releases or website.
 
