@@ -1,0 +1,10 @@
+.DS_Store
+
+# Swift and Xcode build output
+.build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+starship-main/build/
+*.dmg
+.vscode/

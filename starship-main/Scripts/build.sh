@@ -2,6 +2,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 ROOT="$PWD"
+APP_VERSION="$(plutil -extract version raw -o - "$ROOT/../app.json")"
 BUILD="$ROOT/build"
 APP="$BUILD/starship.app"
 STARSHIP_SDK="${STARSHIP_SDK:-$(xcrun --sdk macosx --show-sdk-path)}"
@@ -21,7 +22,7 @@ swiftc -O -parse-as-library \
   -framework CoreMedia -framework CoreVideo -framework QuartzCore \
   -o "$APP/Contents/MacOS/Starship"
 
-cat > "$APP/Contents/Info.plist" <<'PLIST'
+cat > "$APP/Contents/Info.plist" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
@@ -30,8 +31,8 @@ cat > "$APP/Contents/Info.plist" <<'PLIST'
 <key>CFBundleIdentifier</key><string>com.starship.wallpaper</string>
 <key>CFBundleExecutable</key><string>Starship</string>
 <key>CFBundlePackageType</key><string>APPL</string>
-<key>CFBundleShortVersionString</key><string>2026.1</string>
-<key>CFBundleVersion</key><string>202601</string>
+<key>CFBundleShortVersionString</key><string>$APP_VERSION</string>
+<key>CFBundleVersion</key><string>$APP_VERSION</string>
 <key>LSMinimumSystemVersion</key><string>13.0</string>
 <key>LSUIElement</key><true/>
 <key>NSHighResolutionCapable</key><true/>
@@ -39,6 +40,6 @@ cat > "$APP/Contents/Info.plist" <<'PLIST'
 PLIST
 
 codesign --force --deep --sign - "$APP"
-hdiutil create -volname "Starship Snowflake 2026.1" -srcfolder "$APP" -ov -format UDZO "$BUILD/starship.dmg"
+hdiutil create -volname "Starship Snowflake $APP_VERSION" -srcfolder "$APP" -ov -format UDZO "$BUILD/starship.dmg"
 echo "Built: $APP"
 echo "DMG:   $BUILD/starship.dmg"
